@@ -12,3 +12,7 @@
     --bd-violet-bg: var(--bd-violet);
     --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
 }
+
+.card {
+    min-height: 200px !important;
+}

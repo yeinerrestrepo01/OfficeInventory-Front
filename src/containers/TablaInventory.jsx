@@ -26,13 +26,16 @@ const TablaInventory = () => {
     setModal(false);
     setDetalleModal(null);
   }
-  console.log(modal)
+  console.log(libros)
   return (
+   
     <div className="container mt-4">
+       <h2>Detalles Libros</h2>
       <div className="row d-flex justify-content-between">
+      {libros.length <=0?<h3>No existen libros cargados actualmente</h3>:<div></div>}
         {libros?.map((data) => (
-          <div className="col" key={data.id} onClick={()=>getModalData(data)}>
-            <div className="card">
+          <div className="col-md-3" key={data.id} onClick={()=>getModalData(data)}>
+            <div className="card" style={{cursor:"pointer"}}>
               <img className="card-img-top" src={imagenBook} alt="Card image cap" style={{ height: 300 }} />
               <div className="card-body" key={data?.id}>
                 <h5 className="card-title">{data?.titulo}</h5>
