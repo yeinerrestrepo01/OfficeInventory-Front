@@ -11,9 +11,9 @@ function ModalDetailLibros(props) {
                     <button type="button" onClick={props.closeModal}>X</button>
                 </div>
                 <div className={styles.content}>
-                    <h1>Autor Libro: {props.data.id}</h1>
-                    <h1>Editorial: {props.data.id}</h1>
-                    <h1>Sede Editorial: {props.data.id}</h1>
+                  <h4 style={styles.fontitalic}>Autor: {props.data.nombreAutor}</h4>
+                  <h4 style={styles.fontitalic}>Editorial: {props.data.nombreEditorial}</h4>
+                  <h4 style={styles.fontitalic} >Sede Editorial: {props.data.sedeEditorial}</h4>
                 </div>
             </div>
         </div>

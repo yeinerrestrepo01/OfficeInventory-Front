@@ -31,11 +31,11 @@ const TablaInventory = () => {
    
     <div className="container mt-4">
        <h2>Detalles Libros</h2>
-      <div className="row d-flex justify-content-between">
+      <div className="row d-flex justify-content-center">
       {libros.length <=0?<h3>No existen libros cargados actualmente</h3>:<div></div>}
         {libros?.map((data) => (
-          <div className="col-md-3" key={data.id} onClick={()=>getModalData(data)}>
-            <div className="card" style={{cursor:"pointer"}}>
+          <div className="col-md-3 ml-2 pb-3" key={data.id} onClick={()=>getModalData(data)}>
+            <div className="card" style={{width:284, cursor:"pointer"}}>
               <img className="card-img-top" src={imagenBook} alt="Card image cap" style={{ height: 300 }} />
               <div className="card-body" key={data?.id}>
                 <h5 className="card-title">{data?.titulo}</h5>
