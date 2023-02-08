@@ -26,7 +26,6 @@ const TablaInventory = () => {
     setModal(false);
     setDetalleModal(null);
   }
-  console.log(libros)
   return (
    
     <div className="container mt-4">
